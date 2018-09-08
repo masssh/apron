@@ -1,0 +1,31 @@
+{
+  "name": "apron",
+  "version": "0.1.0",
+  "description": "A soft wrapper of d3, to draw axis based charts.",
+  "main": "index.js",
+  "repository": "https://github.com/masssh/apron",
+  "author": "masssh",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "gts": "^0.8.0",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "typescript": "~2.8.0"
+  },
+  "scripts": {
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check",
+    "test": "jest"
+  }
+}
