@@ -13,6 +13,7 @@
     "@types/jest": "^23.3.2",
     "gts": "^0.8.0",
     "jest": "^23.5.0",
+    "rollup-plugin-typescript": "^0.8.1",
     "ts-jest": "^23.1.4",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
@@ -21,7 +22,7 @@
   "scripts": {
     "check": "gts check",
     "clean": "gts clean",
-    "compile": "tsc -p .",
+    "compile": "rollup -c",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
